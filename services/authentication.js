@@ -15,6 +15,7 @@ function createTokenForUser(user) {
 
 function validateToken(token) {
   const payload = JWT.verify(token, secret);
+  console.log(token);
   return payload;
 }
 
